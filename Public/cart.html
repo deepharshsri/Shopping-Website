@@ -4,12 +4,12 @@
     <meta charset="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+    
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./jquerry.js"></script>
+    
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./jquery.js"></script>
-    <script src="./script.js"></script>
+    <script defer src="./script.js"></script>
     <style>
     #load{
     width:100%;
@@ -84,15 +84,174 @@
        
       </li>
     
-       <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
-        <i id="cart" style="color: orange;left: 0px;" class="fas fa-shopping-cart fa-3x "></i>     
+      <a href="./cart.html"><li  class="nav-item " style="margin-left: 50px; margin-top: 10px;" >
+        <i id="cart" style="color: orange;left: 0px;" class="fas fa-shopping-cart fa-3x "></i> 
+        <span class="badge bg-secondary" id="notification"></span>    
       </li>
+  </a>
        <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
         <i class="fas fa-user-circle fa-3x"  style="color: orange;left: 0px;"></i>     
       </li>
     </ul>
-    <!-- <p class="root">
-        
-    </p> -->
+    <div class="container">
+    <div class="row">
+      <div class="col-3"></div>
+       <div class="col-6" style="border: 5px solid black;margin-top: 70px;border-radius: 5%;">    
+    <div id="card" style="margin-top:80px;" >
+
+    </div >
+    <div  class="row" style="padding: 25px;">
+      <div class="col-6">
+      <a style="font-size: 30px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Total Rs: </a>
+      <a style="font-size: 30px;font-weight: bold;color: black;" class="total" ></a>
+    </div>
+    <div class="col-6">
+      <a style="font-size: 30px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Total Item: </a>
+      <a style="font-size: 30px;font-weight: bold;color: black;" class="titem" ></a>
+    </div>
+    </div>
+  </div>
+  <div class="col-3"></div>
+  </div>
+  <div class="row">
+    <div class="col-3"></div>
+     <div class="col-6" style="margin-top: 70px;border-radius: 5%;margin-bottom: 100px;">    
+  
+    <a href="./final.html"><button type="button"   class="btn btn-success" style="width: 650px;border:2px solid black;font-weight: bolder;font-size:xx-large;">Proceed To Pay > ></button>
+    </a>
+  
+</div>
+<div class="col-3"></div>
+</div>
+</div>
+  <script>
+    var xhttp = new XMLHttpRequest();
+
+
+    function myFunction0() {
+  
+  var x= document.getElementById('myBtn0').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn0').parentElement.children[1].textContent
+  console.log(y)
+ $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+  
+}
+    function myFunction1() {
+  
+  var x= document.getElementById('myBtn1').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn1').parentElement.children[1].textContent
+  $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+  
+}
+function myFunction2() {
+  
+  var x= document.getElementById('myBtn2').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn2').parentElement.children[1].textContent
+  $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+  
+
+}
+  function myFunction3() {
+  
+  var x= document.getElementById('myBtn3').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn3').parentElement.children[1].textContent
+    $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+}
+function myFunction4() {
+  
+  var x= document.getElementById('myBtn4').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn4').parentElement.children[1].textContent
+    $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+}
+function myFunction5() {
+  
+  var x= document.getElementById('myBtn5').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn5').parentElement.children[1].textContent
+    $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+}
+function myFunction6() {
+  
+  var x= document.getElementById('myBtn6').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn6').parentElement.children[1].textContent
+    $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+}
+function myFunction7() {
+  
+  var x= document.getElementById('myBtn7').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn7').parentElement.children[1].textContent
+    $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+}
+function myFunction8() {
+  
+  var x= document.getElementById('myBtn8').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn8').parentElement.children[1].textContent
+    $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+}
+function myFunction9() {
+  
+  var x= document.getElementById('myBtn9').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn9').parentElement.children[1].textContent
+  console.log(y)
+  
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+
+}
+function myFunction10() {
+  
+  var x= document.getElementById('myBtn10').parentElement.children[0].textContent
+  var y= document.getElementById('myBtn10').parentElement.children[1].textContent
+    $.post('/cart/delete',{
+   data:y
+ },
+   window.location.replace('cart.html')
+   )
+  window.alert(`Are you sure to remove ${x} ${y} from cart`)
+}
+    </script>
 </body>
 </html>

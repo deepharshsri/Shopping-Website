@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="utf-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <script src="./jquery.js"></script>
+    <script defer src="./script.js"></script>
+    <style>
+        #load{
+            width:100%;
+            height:100%;
+            position:fixed;
+            z-index:9999;
+            background:url("./Images/sr\ \(3\).gif") no-repeat center center #06607c6b;
+            
+        }
+    </style>
+    
+    <script> document.onreadystatechange = function () {
+        var state = document.readyState
+        if (state == 'interactive') {
+            document.getElementById('contents').style.visibility="hidden";
+        } else if (state == 'complete') {
+            setTimeout(function(){
+                document.getElementById('interactive');
+                document.getElementById('load').style.visibility="hidden";
+                document.getElementById('contents').style.visibility="visible";
+            },1000);
+        }
+    }
+</script>
+</head>
+<body style="background-color: wheat;">
+    <body>
+        <div id="load"></div>
+        <div id="contents">
+            jlkjjlkjlkjlkjlklk
+        </div>
+    </body>
+    <ul class="nav nav-pills fixed-top" style="background-color: black;" >
+        <a href="./index.html">       <img src="./Images/sr (1).png"  alt="" style="height: 70px;width: 70px;" ></a>    
+        <li class="nav-item dropdown" style="margin-left: 50px;">
+            <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Electronics</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./television.html">Television</a></li>
+                <li><a class="dropdown-item" href="./Phone.html">Mobile Phones</a></li>
+                <li><a class="dropdown-item" href="#">Refrigerator</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown" style="margin-left: 50px;">
+            <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Clothes</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Mens-Tshirts</a></li>
+                <li><a class="dropdown-item" href="#">Mens-Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Mens-Jeans</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Womens-Tshirts</a></li>
+                <li><a class="dropdown-item" href="#">Womens-Kurtas&Suits</a></li>
+                <li><a class="dropdown-item" href="#">Womens-Jeans</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown" style="margin-left: 50px;">
+            <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shoes</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Boots</a></li>
+                <li><a class="dropdown-item" href="#">Sneakers</a></li>
+                <li><a class="dropdown-item" href="#">Sandals</a></li>
+            </ul>
+        </li>
+        
+        <li class="nav-item " style="margin-left: 50px;">
+            <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Men's Collection</a>
+            
+        </li>
+        <li class="nav-item " style="margin-left: 50px;">
+            <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Women's Collection</a>
+            
+        </li>
+        
+        <a href="./cart.html"><li  class="nav-item " style="margin-left: 50px; margin-top: 10px;" >
+            <i id="cart" style="color: orange;left: 0px;" class="fas fa-shopping-cart fa-3x "></i> 
+            <span class="badge bg-secondary" id="notification"></span>    
+        </li>
+    </a>
+    <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
+        <i class="fas fa-user-circle fa-3x"  style="color: orange;left: 0px;"></i>     
+    </li>
+</ul>
+<div class="container">
+<div class="row" >
+    <div class="col-3"></div>
+    <div class="col-6" style="border: 5px solid black;margin-top: 70px;border-radius: 5%;background-color: whitesmoke;">    
+        
+        <div  class="row " style="padding: 25px;">
+            <div class="col-6">
+                <a style="font-size: 30px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Total Rs: </a>
+                <a style="font-size: 30px;font-weight: bold;color: black;" class="total" ></a>
+            </div>
+            <div class="col-6">
+                <a style="font-size: 30px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Total Item: </a>
+                <a style="font-size: 30px;font-weight: bold;color: black;" class="titem" ></a>
+            </div>
+        </div>
+        
+<div class="btn-group" style="padding: 10px;">
+    <button type="button" class="btn btn-warning dropdown-toggle" data-bs-toggle="dropdown" aria-expanded="false">
+     Coupons
+    </button>
+    <a id="appl" style="color: red;font-size: 20px;padding: 10px;" ></a>
+    <ul class="dropdown-menu">
+      <li><a class="dropdown-item" id="ten">10% Off for First User</a></li>
+      <li><a class="dropdown-item" id="twenty">20% Off Using Amazon Pay</a></li>
+      <li><a class="dropdown-item" id="thirty">25% off Using Debit or Credit Card</a></li>
+      
+    </ul>
+  </div>
+  <div style="padding: 10px;">
+    <a style="font-size: 30px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Final Amount: </a>
+    <a style="font-size: 30px;font-weight: bold;color: black;" class="total" id="final"></a>
+</div>
+    </div>
+    <div class="col-3"></div>
+</div>
+
+<div class="row">
+    <div class="col-3"></div>
+    <div class="col-6" style="border: 5px solid black;margin-top: 70px;border-radius: 5%;">    
+        
+        <div style="font-size: 35px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Choose Option for Payment </div>
+        <ul class="list-group" style="padding:20px ;">
+            <li class="list-group-item" id="debit"  style="font-size: 30px;padding: 20px;font-weight: bolder;">Debit Card<i style="float: right;color: orange;" class="fas fa-credit-card fa-3x"></i>
+                <div id="dbox" style="border: 3px black solid;margin-top: 50px;border-radius: 7px;" >
+                <div class="mb-3" style="margin-top: 30px;font-size: 20px;">
+                    <label for="formGroupExampleInput" class="form-label" style="margin-left: 20px;">Card Number</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" style="width: 300px;margin-left: 20px;" placeholder="Enter Card Number">
+                  </div>
+                <div class="row" style="font-size: 20px;">
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label" style="margin-left: 20px;">Expiry Date</label>
+                      <input type="text" class="form-control" placeholder="_ _ / _ _" style="margin-left: 20px;margin-bottom: 20px;width: 100px;" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label">CVV</label>
+                      <input type="password" class="form-control" placeholder="***" style="margin-bottom: 20px;width: 100px;" aria-label="Last name">
+                    </div>
+                  </div></div></li>
+            <li class="list-group-item" id="credit" style="font-size: 30px;padding: 20px;font-weight: bolder;">Credit Card<i class="far fa-credit-card fa-3x"  style="float: right;color: orange;"> </i> <div id="cbox" style="border: 3px black solid;margin-top: 50px;border-radius: 7px;" >
+                <div class="mb-3" style="margin-top: 30px;font-size: 20px;">
+                    <label for="formGroupExampleInput" class="form-label" style="margin-left: 20px;">Card Number</label>
+                    <input type="text" class="form-control" id="formGroupExampleInput" style="width: 300px;margin-left: 20px;" placeholder="Enter Card Number">
+                  </div>
+                <div class="row" style="font-size: 20px;">
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label" style="margin-left: 20px;">Expiry Date</label>
+                      <input type="text" class="form-control" placeholder="_ _ / _ _" style="margin-left: 20px;margin-bottom: 20px;width: 100px;" aria-label="First name">
+                    </div>
+                    <div class="col">
+                        <label for="formGroupExampleInput" class="form-label">CVV</label>
+                      <input type="password" class="form-control" placeholder="***" style="margin-bottom: 20px;width: 100px;" aria-label="Last name">
+                    </div>
+                  </div></div></li>
+            <li class="list-group-item" id="paypal" style="font-size: 30px;padding: 20px;font-weight: bolder;">Pay Pal<i class="fab fa-cc-paypal fa-3x"  style="float: right;color: orange;"></i><input type="text" class="form-control " id="pupi" placeholder="Enter UPI ID" style="width: 200px;margin-top: 30px;" ></li>
+            <li class="list-group-item" id="gpay" style="font-size: 30px;padding: 20px;font-weight: bolder;">G-Pay<i class="fab fa-google-pay fa-3x" style="float: right;color: orange;"></i><input type="text" class="form-control " id="gupi" placeholder="Enter UPI ID" style="width: 200px;margin-top: 30px;" ></li>
+            <li class="list-group-item" id="apay" style="font-size: 30px;padding: 20px;font-weight: bolder;">Amazon Pay<i class="fab fa-cc-amazon-pay fa-3x" style="float: right;color: orange;"></i><input type="text" class="form-control " id="aupi" placeholder="Enter UPI ID" style="width: 200px;margin-top: 30px;" ></li>
+            <li class="list-group-item" id="cod" style="font-size: 30px;padding: 20px;font-weight: bolder;">COD<i class="fas fa-money-bill-wave-alt fa-3x" style="float: right;color: orange;"></i></li>
+ 
+        </ul>
+
+             
+        </div>
+        <div class="col-3"></div>
+    </div>
+    
+    <div class="row" >
+        <div class="col-3"></div>
+        <div class="col-6" style="border: 5px solid black;margin-top: 70px;border-radius: 5%;background-color: whitesmoke;"> 
+            <div style="font-size: 35px;font-weight: bold;font-family: 'Times New Roman', Times, serif;">Choose Option for Payment </div>
+            <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Full Name</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="Enter Your Name">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Mobile Number</label>
+                <input type="number" class="form-control" id="formGroupExampleInput2" placeholder="10-digit mobile number without prefixes">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput" class="form-label">Pin Code</label>
+                <input type="text" class="form-control" id="formGroupExampleInput" placeholder="6 digits[0-9] PIN code">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Flat, House no., Building, Company, Apartment</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Area, Colony, Street, Sector, Village
+                </label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Landmark</label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="E.g. Near AIIMS Flyover, Behind Regal Cinema">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">Town/City
+                </label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+              </div>
+              <div class="mb-3">
+                <label for="formGroupExampleInput2" class="form-label">State
+                </label>
+                <input type="text" class="form-control" id="formGroupExampleInput2" placeholder="">
+              </div>
+              
+        </div>
+        <div class="row">
+            <div class="col-3"></div>
+             <div class="col-6" style="margin-top: 70px;border-radius: 5%;margin-bottom: 100px;">    
+          
+            <a href="./final.html"><button type="button"   class="btn btn-success" style="width: 650px;border:2px solid black;font-weight: bolder;font-size:xx-large;">Proceed To Pay > ></button>
+            </a>
+</div>
+</body>
+</html>

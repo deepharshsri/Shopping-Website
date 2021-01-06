@@ -1,497 +1,498 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./jquerry.js"></script>
-    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
-    <script src="./jquery.js"></script>
-    <script src="./script.js"></script>
-    <style>
+<head>
+  <meta charset="utf-8">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+  <script src="./jquery.js"></script>
+  <script src="./script.js"></script>
+  <style>
     #load{
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:9999;
-    background:url("./Images/sr\ \(3\).gif") no-repeat center center #06607c6b;
-    
-}
-    </style>
-    
-      <script> document.onreadystatechange = function () {
-        var state = document.readyState
-        if (state == 'interactive') {
-             document.getElementById('contents').style.visibility="hidden";
-        } else if (state == 'complete') {
-            setTimeout(function(){
-               document.getElementById('interactive');
-               document.getElementById('load').style.visibility="hidden";
-               document.getElementById('contents').style.visibility="visible";
-            },1000);
-        }
-      }
-    </script>
-  </head>
-  <body style="background-color: wheat;">
-    <body>
-      <div id="load"></div>
-      <div id="contents">
-            jlkjjlkjlkjlkjlklk
-      </div>
+      width:100%;
+      height:100%;
+      position:fixed;
+      z-index:9999;
+      background:url("./Images/sr\ \(3\).gif") no-repeat center center #06607c6b;
+      
+    }
+  </style>
+  
+  <script> document.onreadystatechange = function () {
+    var state = document.readyState
+    if (state == 'interactive') {
+      document.getElementById('contents').style.visibility="hidden";
+    } else if (state == 'complete') {
+      setTimeout(function(){
+        document.getElementById('interactive');
+        document.getElementById('load').style.visibility="hidden";
+        document.getElementById('contents').style.visibility="visible";
+      },1000);
+    }
+  }
+</script>
+</head>
+<body style="background-color: wheat;">
+  <body>
+    <div id="load"></div>
+    <div id="contents">
+      jlkjjlkjlkjlkjlklk
+    </div>
   </body>
-    <ul class="nav nav-pills fixed-top" style="background-color: black;" >
-      <a href="./index.html">       <img src="./Images/sr (1).png"  alt="" style="height: 70px;width: 70px;" ></a>    
-      <li class="nav-item dropdown" style="margin-left: 50px;">
-        <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Electronics</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="./television.html">Television</a></li>
-          <li><a class="dropdown-item" href="./Phone.html">Mobile Phones</a></li>
-          <li><a class="dropdown-item" href="#">Refrigerator</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown" style="margin-left: 50px;">
-        <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Clothes</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Mens-Tshirts</a></li>
-          <li><a class="dropdown-item" href="#">Mens-Shirts</a></li>
-          <li><a class="dropdown-item" href="#">Mens-Jeans</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Womens-Tshirts</a></li>
-          <li><a class="dropdown-item" href="#">Womens-Kurtas&Suits</a></li>
-          <li><a class="dropdown-item" href="#">Womens-Jeans</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown" style="margin-left: 50px;">
-        <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shoes</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Boots</a></li>
-          <li><a class="dropdown-item" href="#">Sneakers</a></li>
-          <li><a class="dropdown-item" href="#">Sandals</a></li>
-        </ul>
-      </li>
+  <ul class="nav nav-pills fixed-top" style="background-color: black;" >
+    <a href="./index.html">       <img src="./Images/sr (1).png"  alt="" style="height: 70px;width: 70px;" ></a>    
+    <li class="nav-item dropdown" style="margin-left: 50px;">
+      <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Electronics</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="./television.html">Television</a></li>
+        <li><a class="dropdown-item" href="./Phone.html">Mobile Phones</a></li>
+        <li><a class="dropdown-item" href="#">Refrigerator</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Separated link</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown" style="margin-left: 50px;">
+      <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Clothes</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Mens-Tshirts</a></li>
+        <li><a class="dropdown-item" href="#">Mens-Shirts</a></li>
+        <li><a class="dropdown-item" href="#">Mens-Jeans</a></li>
+        <li><hr class="dropdown-divider"></li>
+        <li><a class="dropdown-item" href="#">Womens-Tshirts</a></li>
+        <li><a class="dropdown-item" href="#">Womens-Kurtas&Suits</a></li>
+        <li><a class="dropdown-item" href="#">Womens-Jeans</a></li>
+      </ul>
+    </li>
+    <li class="nav-item dropdown" style="margin-left: 50px;">
+      <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shoes</a>
+      <ul class="dropdown-menu">
+        <li><a class="dropdown-item" href="#">Boots</a></li>
+        <li><a class="dropdown-item" href="#">Sneakers</a></li>
+        <li><a class="dropdown-item" href="#">Sandals</a></li>
+      </ul>
+    </li>
     
-      <li class="nav-item " style="margin-left: 50px;">
-        <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Men's Collection</a>
-       
-      </li>
-      <li class="nav-item " style="margin-left: 50px;">
-        <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Women's Collection</a>
-       
-      </li>
-    
-       <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
-        <i id="cart" style="color: orange;left: 0px;" class="fas fa-shopping-cart fa-3x "></i>     
-      </li>
-       <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
-        <i class="fas fa-user-circle fa-3x"  style="color: orange;left: 0px;"></i>     
-      </li>
-    </ul>
-     <div class="container">
-     <div class="row row-cols-3" style="margin: 20px;padding: 10px;" >
-                 <div class="col">
-                    <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                        <img src="./Images/and.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                        <div class="card-body" style="width: 300px;margin: 0px;">
-                          <h5 class="card-title">LED 24DJ</h5>
-                          <h6 id="item"  class="card-title">FORTEX</h6>
-                          <p class="card-text">Rs.18,999</p>
-                          <div class="row">
-                          <div class="col-6" style="padding: 5px;">
-                          <a href="#" class="btn btn-primary">BUY NOW </a>
-                              </div>
-                              <div class="col-6" style="  padding: 5px;">
-                                <a href="#" id="additem" class="btn btn-primary">ADD TO CART </a>
-                                    </div>
-                          </div>
-                        </div>
-                      </div>
-                     </div>
-                     <div class="col">
-                        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                            <img src="./Images/led.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                            <div class="card-body">
-                              <h5 class="card-title">QLED 24K</h5>
-                              <h6 class="card-title">SAMSUNG</h6>
-                              <p class="card-text">Rs.9,500</p>
-                              <div class="row">
-                                  <div class="col-6" style="padding: 5px;">
-                              <a href="#" class="btn btn-primary">BUY NOW </a>
-                                  </div>
-                                  <div class="col-6" style="  padding: 5px;">
-                                    <a href="#" class="btn btn-primary">ADD TO CART </a>
-                                        </div>
-                              </div>
-                            </div>
-                          </div>
-                         </div>
-                         <div class="col">
-                            <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                                <img src="./Images/oneplus.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                                <div class="card-body">
-                                  <h5 class="card-title">LED 32K</h5>
-                                  <h6 class="card-title">ONEPLUS</h6>
-                                  <p class="card-text">Rs.23,999</p>
-                                  <div class="row">
-                                      <div class="col-6" style="padding: 5px;">
-                                  <a href="#" class="btn btn-primary">BUY NOW </a>
-                                      </div>
-                                      <div class="col-6" style="  padding: 5px;">
-                                        <a href="#" class="btn btn-primary">ADD TO CART </a>
-                                            </div>
-                                  </div>
-                                </div>
-                              </div>
-                             </div>
-     </div>
-     <div class="row row-cols-3" >
-        
-             
-            <div class="col">
-               <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                   <img src="./Images/LG.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                   <div class="card-body">
-                     <h5 class="card-title">OLED KN2365</h5>
-                     <h6 class="card-title">LG</h6>
-                     <p class="card-text">Rs.1,18,999</p>
-                     <div class="row">
-                         <div class="col-6" style="padding: 5px;">
-                     <a href="#" class="btn btn-primary">BUY NOW </a>
-                         </div>
-                         <div class="col-6" style="  padding: 5px;">
-                           <a href="#" class="btn btn-primary">ADD TO CART </a>
-                               </div>
-                     </div>
-                   </div>
-                 </div>
-                </div>
-                <div class="col">
-                   <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                       <img src="./Images/MOTO.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                       <div class="card-body">
-                         <h5 class="card-title">OLED DK453</h5>
-                         <h6 class="card-title"> MOTOROLA</h6>
-                         <p class="card-text">Rs.19,500</p>
-                         <div class="row">
-                             <div class="col-6" style="padding: 5px;">
-                         <a href="#" class="btn btn-primary">BUY NOW </a>
-                             </div>
-                             <div class="col-6" style="  padding: 5px;">
-                               <a href="#" class="btn btn-primary">ADD TO CART </a>
-                                   </div>
-                         </div>
-                       </div>
-                     </div>
-                    </div>
-                    <div class="col">
-                       <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                           <img src="./Images/LI.jpeg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                           <div class="card-body">
-                             <h5 class="card-title">OLED GK43</h5>
-                             <h6 class="card-title">HISENSE</h6>
-                             <p class="card-text">Rs.14,999</p>
-                             <div class="row">
-                                 <div class="col-6" style="padding: 5px;">
-                             <a href="#" class="btn btn-primary">BUY NOW </a>
-                                 </div>
-                                 <div class="col-6" style="  padding: 5px;">
-                                   <a href="#" class="btn btn-primary">ADD TO CART </a>
-                                       </div>
-                             </div>
-                           </div>
-                         </div>
-                        </div>
-</div>
-<div class="row row-cols-3" >
-    <div class="col">
-       <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-           <img src="./Images/mi.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-           <div class="card-body">
-             <h5 class="card-title">LED FX24VR</h5>
-             <h6 class="card-title">MI</h6>
-             <p class="card-text">Rs.21,999</p>
-             <div class="row">
-                 <div class="col-6" style="padding: 5px;">
-             <a href="#" class="btn btn-primary">BUY NOW </a>
-                 </div>
-                 <div class="col-6" style="  padding: 5px;">
-                   <a href="#" class="btn btn-primary">ADD TO CART </a>
-                       </div>
-             </div>
-           </div>
-         </div>
-        </div>
-        <div class="col">
-           <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-               <img src="./Images/fortex.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-               <div class="card-body">
-                 <h5 class="card-title">LED FX55</h5>
-                 <h6 class="card-title">FORTEX</h6>
-                 <p class="card-text">Rs.18,999</p>
-                 <div class="row">
-                     <div class="col-6" style="padding: 5px;">
-                 <a href="#" class="btn btn-primary">BUY NOW </a>
-                     </div>
-                     <div class="col-6" style="  padding: 5px;">
-                       <a href="#" class="btn btn-primary">ADD TO CART </a>
-                           </div>
-                 </div>
-               </div>
-             </div>
-            </div>
-            <div class="col">
-               <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                   <img src="./Images/LED1.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                   <div class="card-body">
-                     <h5 class="card-title">LED DX785</h5>
-                     <h6 class="card-title">SAMSUNG</h6>
-                     <p class="card-text">Rs.9,500</p>
-                     <div class="row">
-                         <div class="col-6" style="padding: 5px;">
-                     <a href="#" class="btn btn-primary">BUY NOW </a>
-                         </div>
-                         <div class="col-6" style="  padding: 5px;">
-                           <a href="#" class="btn btn-primary">ADD TO CART </a>
-                               </div>
-                     </div>
-                   </div>
-                 </div>
-                </div>
-                
-</div>
-<div class="row row-cols-3" >
-    <div class="col">
-       <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-           <img src="./Images/lib.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-           <div class="card-body">
-             <h5 class="card-title">LED DS342K</h5>
-             <h6 class="card-title">MI</h6>
-             <p class="card-text">Rs.21,999</p>
-             <div class="row">
-                 <div class="col-6" style="padding: 5px;">
-             <a href="#" class="btn btn-primary">BUY NOW </a>
-                 </div>
-                 <div class="col-6" style="  padding: 5px;">
-                   <a href="#" class="btn btn-primary">ADD TO CART </a>
-                       </div>
-             </div>
-           </div>
-         </div>
-        </div>
-        <div class="col">
-           <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-               <img src="./Images/zeb.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-               <div class="card-body">
-                 <h5 class="card-title">LED GS98J</h5>
-                 <h6 class="card-title">ZEBRONICS</h6>
-                 <p class="card-text">Rs.18,999</p>
-                 <div class="row">
-                     <div class="col-6" style="padding: 5px;">
-                 <a href="#" class="btn btn-primary">BUY NOW </a>
-                     </div>
-                     <div class="col-6" style="  padding: 5px;">
-                       <a href="#" class="btn btn-primary">ADD TO CART </a>
-                           </div>
-                 </div>
-               </div>
-             </div>
-            </div>
-            <div class="col">
-               <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                   <img src="./Images/tcl.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                   <div class="card-body">
-                     <h5 class="card-title">LED VI45KT</h5>
-                     <h6 class="card-title">TCL</h6>
-                     <p class="card-text">Rs.9,500</p>
-                     <div class="row">
-                         <div class="col-6" style="padding: 5px;">
-                     <a href="#" class="btn btn-primary">BUY NOW </a>
-                         </div>
-                         <div class="col-6" style="  padding: 5px;">
-                           <a href="#" class="btn btn-primary">ADD TO CART </a>
-                               </div>
-                     </div>
-                   </div>
-                 </div>
-                </div>
-              
-</div>
-<div class="row row-cols-3" >
-    <div class="col">
-       <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-           <img src="./Images/NA3.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-           <div class="card-body">
-             <h5 class="card-title">NANOCELL TG7K</h5>
-             <h6 class="card-title">MI</h6>
-             <p class="card-text">Rs.1,21,999</p>
-             <div class="row">
-                 <div class="col-6" style="padding: 5px;">
-             <a href="#" class="btn btn-primary">BUY NOW </a>
-                 </div>
-                 <div class="col-6" style="  padding: 5px;">
-                   <a href="#" class="btn btn-primary">ADD TO CART </a>
-                       </div>
-             </div>
-           </div>
-         </div>
-        </div>
-        <div class="col">
-           <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-               <img src="./Images/NA2.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-               <div class="card-body">
-                 <h5 class="card-title">NANOCELL RT557B</h5>
-                 <h6 class="card-title">LG</h6>
-                 <p class="card-text">Rs.1,18,999</p>
-                 <div class="row">
-                     <div class="col-6" style="padding: 5px;">
-                 <a href="#" class="btn btn-primary">BUY NOW </a>
-                     </div>
-                     <div class="col-6" style="  padding: 5px;">
-                       <a href="#" class="btn btn-primary">ADD TO CART </a>
-                           </div>
-                 </div>
-               </div>
-             </div>
-            </div>
-            <div class="col">
-               <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-                   <img src="./Images/NA1.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-                   <div class="card-body">
-                     <h5 class="card-title">NANOCELL YT54T</h5>
-                     <h6 class="card-title">LG</h6>
-                     <p class="card-text">Rs.1,19,500</p>
-                     <div class="row">
-                         <div class="col-6" style="padding: 5px;">
-                     <a href="#" class="btn btn-primary">BUY NOW </a>
-                         </div>
-                         <div class="col-6" style="  padding: 5px;">
-                           <a href="#" class="btn btn-primary">ADD TO CART </a>
-                               </div>
-                     </div>
-                   </div>
-                 </div>
-                </div>
-               
-</div>
-<div class="row row-cols-3" style="margin: 20px;padding: 10px;" >
-  <div class="col">
-    <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-        <img src="./Images/NA.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-        <div class="card-body">
-          <h5 class="card-title">NANOCELL LP7T</h5>
-          <h6 class="card-title">LG</h6>
-          <p class="card-text">Rs.1,49,999</p>
-          <div class="row">
+    <li class="nav-item " style="margin-left: 50px;">
+      <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Men's Collection</a>
+      
+    </li>
+    <li class="nav-item " style="margin-left: 50px;">
+      <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Women's Collection</a>
+      
+    </li>
+    <a href="./cart.html"><li  class="nav-item " style="margin-left: 50px; margin-top: 10px;" >
+      <i id="cart" style="color: orange;left: 0px;" class="fas fa-shopping-cart fa-3x "></i> 
+      <span class="badge bg-secondary" id="notification"></span>    
+    </li>
+</a>
+    <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
+      <i class="fas fa-user-circle fa-3x"  style="color: orange;left: 0px;"></i>     
+    </li>
+  </ul>
+  <div class="container">
+    <div class="row row-cols-3" style="margin: 20px;padding: 10px;" >
+      <div class="col">
+        <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/and.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body" style="width: 300px;margin: 0px;">
+            <h5 class="card-title">LED 24DJ</h5>
+            <h6 id="item"  class="card-title">FORTEX</h6>
+            <p class="card-text">18999</p>
+            <div class="row">
               <div class="col-6" style="padding: 5px;">
-          <a href="#" class="btn btn-primary">BUY NOW </a>
+                <a href="#" class="btn btn-primary">BUY NOW </a>
               </div>
               <div class="col-6" style="  padding: 5px;">
-                <a href="#" class="btn btn-primary">ADD TO CART </a>
-                    </div>
+                <a href="#" id="tv1" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
           </div>
         </div>
       </div>
-     </div>
-     <div class="col">
-      <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/led.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">QLED 24K</h5>
+            <h6 class="card-title">SAMSUNG</h6>
+            <p class="card-text">9500</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv2" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/oneplus.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">LED 32K</h5>
+            <h6 class="card-title">ONEPLUS</h6>
+            <p class="card-text">23999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv3"class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-3" >
+      
+      
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/LG.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">OLED KN2365</h5>
+            <h6 class="card-title">LG</h6>
+            <p class="card-text">118999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv4"class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/MOTO.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">OLED DK453</h5>
+            <h6 class="card-title"> MOTOROLA</h6>
+            <p class="card-text">19500</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv5" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/LI.jpeg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">OLED GK43</h5>
+            <h6 class="card-title">HISENSE</h6>
+            <p class="card-text">14999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv6" id="additem" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="row row-cols-3" >
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/mi.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">LED FX24VR</h5>
+            <h6 class="card-title">MI</h6>
+            <p class="card-text">21999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv7" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/fortex.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">LED FX55</h5>
+            <h6 class="card-title">FORTEX</h6>
+            <p class="card-text">18999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv8" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/LED1.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">LED DX785</h5>
+            <h6 class="card-title">SAMSUNG</h6>
+            <p class="card-text">9500</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv9" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row row-cols-3" >
+      <div class="col">
+        <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/lib.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">LED DS342K</h5>
+            <h6 class="card-title">MI</h6>
+            <p class="card-text">21999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv10" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card" style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/zeb.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">LED GS98J</h5>
+            <h6 class="card-title">ZEBRONICS</h6>
+            <p class="card-text">18999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv11" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/tcl.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">LED VI45KT</h5>
+            <h6 class="card-title">TCL</h6>
+            <p class="card-text">9500</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#" id="tv12" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row row-cols-3" >
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/NA3.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">NANOCELL TG7K</h5>
+            <h6 class="card-title">MI</h6>
+            <p class="card-text">121999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv13" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/NA2.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">NANOCELL RT557B</h5>
+            <h6 class="card-title">LG</h6>
+            <p class="card-text">118999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv14" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/NA1.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">NANOCELL YT54T</h5>
+            <h6 class="card-title">LG</h6>
+            <p class="card-text">119500</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv15" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+    </div>
+    <div class="row row-cols-3" style="margin: 20px;padding: 10px;" >
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/NA.jpg" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">NANOCELL LP7T</h5>
+            <h6 class="card-title">LG</h6>
+            <p class="card-text">149999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv16" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
           <img src="./Images/nic.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
           <div class="card-body">
             <h5 class="card-title">NANOCELL XT47H</h5>
             <h6 class="card-title">ONEPLUS</h6>
-            <p class="card-text">Rs.23,999</p>
+            <p class="card-text">23999</p>
             <div class="row">
-                <div class="col-6" style="padding: 5px;">
-            <a href="#" class="btn btn-primary">BUY NOW </a>
-                </div>
-                <div class="col-6" style="  padding: 5px;">
-                  <a href="#" class="btn btn-primary">ADD TO CART </a>
-                      </div>
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv17" class="btn btn-primary">ADD TO CART </a>
+              </div>
             </div>
           </div>
         </div>
-       </div>
-       <div class="col">
-        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-            <img src="./Images/oneplus.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-            <div class="card-body">
-              <h5 class="card-title">LED CT7S</h5>
-              <h6 class="card-title">ONEPLUS</h6>
-              <p class="card-text">Rs.23,999</p>
-              <div class="row">
-                  <div class="col-6" style="padding: 5px;">
-              <a href="#" class="btn btn-primary">BUY NOW </a>
-                  </div>
-                  <div class="col-6" style="  padding: 5px;">
-                    <a href="#" class="btn btn-primary">ADD TO CART </a>
-                        </div>
-              </div>
-            </div>
-          </div>
-         </div>
-</div>
-<div class="row row-cols-3" style="margin: 20px;padding: 10px;" >
-  <div class="col">
-     <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-         <img src="./Images/SM.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-         <div class="card-body">
-           <h5 class="card-title">OLED KI75G</h5>
-           <h6 class="card-title">LG</h6>
-           <p class="card-text">Rs.21,999</p>
-           <div class="row">
-               <div class="col-6" style="padding: 5px;">
-           <a href="#" class="btn btn-primary">BUY NOW </a>
-               </div>
-               <div class="col-6" style="  padding: 5px;">
-                 <a href="#" class="btn btn-primary">ADD TO CART </a>
-                     </div>
-           </div>
-         </div>
-       </div>
-  </div>
-       <div class="col">
-        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-            <img src="./Images/SONY.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-            <div class="card-body">
-              <h5 class="card-title">OLED FD45Y</h5>
-              <h6 class="card-title">SONY BRAVIA</h6>
-              <p class="card-text">Rs.1,21,999</p>
-              <div class="row">
-                  <div class="col-6" style="padding: 5px;">
-              <a href="#" class="btn btn-primary">BUY NOW </a>
-                  </div>
-                  <div class="col-6" style="  padding: 5px;">
-                    <a href="#" class="btn btn-primary">ADD TO CART </a>
-                        </div>
-              </div>
-            </div>
-          </div>
       </div>
       <div class="col">
         <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
-            <img src="./Images/airtec.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
-            <div class="card-body">
-              <h5 class="card-title">OLED KT5D48</h5>
-              <h6 class="card-title">eAirtec</h6>
-              <p class="card-text">Rs.43,999</p>
-              <div class="row">
-                  <div class="col-6" style="padding: 5px;">
-              <a href="#" class="btn btn-primary">BUY NOW </a>
-                  </div>
-                  <div class="col-6" style="  padding: 5px;">
-                    <a href="#" class="btn btn-primary">ADD TO CART </a>
-                        </div>
+          <img src="./Images/oneplus.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">LED CT7S</h5>
+            <h6 class="card-title">ONEPLUS</h6>
+            <p class="card-text">23999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv18" class="btn btn-primary">ADD TO CART </a>
               </div>
             </div>
           </div>
+        </div>
       </div>
-     </div>
-</div>
-<div class="root">
-
-</div>
- </body>
- </html>
+    </div>
+    <div class="row row-cols-3" style="margin: 20px;padding: 10px;" >
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/SM.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">OLED KI75G</h5>
+            <h6 class="card-title">LG</h6>
+            <p class="card-text">21999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv19" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/SONY.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">OLED FD45Y</h5>
+            <h6 class="card-title">SONY BRAVIA</h6>
+            <p class="card-text">121999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#" id="tv20" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="col">
+        <div class="card"style="width: 320px; padding :0px;padding-top: 15px;margin: 10px;">
+          <img src="./Images/airtec.webp" class="card-img-top" style="height: 180px;width: 280px;padding: 10px; background-color: white;margin-left:30px ">
+          <div class="card-body">
+            <h5 class="card-title">OLED KT5D48</h5>
+            <h6 class="card-title">eAirtec</h6>
+            <p class="card-text">43999</p>
+            <div class="row">
+              <div class="col-6" style="padding: 5px;">
+                <a href="#" class="btn btn-primary">BUY NOW </a>
+              </div>
+              <div class="col-6" style="  padding: 5px;">
+                <a href="#"  id="tv21" class="btn btn-primary">ADD TO CART </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="root">
+    
+  </div>
+</body>
+</html>
