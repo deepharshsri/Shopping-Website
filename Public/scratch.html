@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <title>Scratch card with Canvas</title>
+    <meta name="description" content="DESCRIPTIONHERE" />
+    <meta name="author" content="Frontendscript" />
+   
+    <!--Only for demo purpose - no need to add.-->
+    <link rel="stylesheet" type="text/css" href="scratch-card.css" />
+    <style>
+	.card{
+		 width: 300px;
+		 height: 300px;
+		 position: relative;
+		 box-shadow: 1px 7px 6px rgba(0, 0, 0, 0.2);
+		 margin: 10px auto;
+		}    
+		
+	  .base, #scratch {
+		cursor:pointer;
+		height: 300px;
+		width: 300px;
+		  position: absolute;
+		  top: 0;
+		  left: 0;
+	  }
+	  .base {
+		line-height: 0px;
+		text-align: center;
+	  }
+	  #scratch {
+		-webkit-tap-highlight-color: rgba(0, 2, 94, 0); 
+		-webkit-touch-callout:none;
+		-webkit-user-select: none;
+	  }
+    </style>
+</head>
+<body>
+		
+
+<section>
+    <div class="rt-container">
+          <div class="col-rt-12">
+              <div class="Scriptcontent">
+                <div class="card">
+                	<div class="base">Your Card Number: 0123456789</div>
+                	<canvas id="scratch" width="300" height="100"></canvas>
+                </div>
+    		</div>
+		</div>
+    </div>
+</section>
+     
+     
+     <script src="scratch.js"></script>
+    
+	</body>
+</html>

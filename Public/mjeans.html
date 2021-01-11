@@ -1,96 +1,100 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
-  <head>
-    <meta charset="utf-8">
+<head>
+    <meta chaet="utf-8">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" >
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
-    <link rel="stylesheet" href="styles.css">
+  
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="./jquerry.js"></script>
+ 
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
     <script src="./jquery.js"></script>
     <script src="./script.js"></script>
+    <script src="./Mjeans.js"></script>
     <style>
-    #load{
-    width:100%;
-    height:100%;
-    position:fixed;
-    z-index:9999;
-    background:url("./Images/sr\ \(3\).gif") no-repeat center center #06607c6b;
-    
-}
+        #load{
+            width:100%;
+            height:100%;
+            position:fixed;
+            z-index:9999;
+            background:url("./Images/sr\ \(3\).gif") no-repeat center center #06607c6b;
+            
+        }
     </style>
     
-      <script> document.onreadystatechange = function () {
+    <script> document.onreadystatechange = function () {
         var state = document.readyState
         if (state == 'interactive') {
-             document.getElementById('contents').style.visibility="hidden";
+            document.getElementById('contents').style.visibility="hidden";
         } else if (state == 'complete') {
             setTimeout(function(){
-               document.getElementById('interactive');
-               document.getElementById('load').style.visibility="hidden";
-               document.getElementById('contents').style.visibility="visible";
+                document.getElementById('interactive');
+                document.getElementById('load').style.visibility="hidden";
+                document.getElementById('contents').style.visibility="visible";
             },1000);
         }
-      }
-    </script>
-  </head>
-  <body style="background-color: wheat;">
+    }
+</script>
+</head>
+<body style="background-color: wheat;">
     <body>
-      <div id="load"></div>
-      <div id="contents">
+        <div id="load"></div>
+        <div id="contents">
             jlkjjlkjlkjlkjlklk
-      </div>
-  </body>
+        </div>
+    </body>
     <ul class="nav nav-pills fixed-top" style="background-color: black;" >
-      <a href="./index.html">       <img src="./Images/sr (1).png"  alt="" style="height: 70px;width: 70px;" ></a>    
-      <li class="nav-item dropdown" style="margin-left: 50px;">
-        <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Electronics</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="./television.html">Television</a></li>
-          <li><a class="dropdown-item" href="./Phone.html">Mobile Phones</a></li>
-          <li><a class="dropdown-item" href="#">Refrigerator</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Separated link</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown" style="margin-left: 50px;">
-        <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Clothes</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Mens-Tshirts</a></li>
-          <li><a class="dropdown-item" href="#">Mens-Shirts</a></li>
-          <li><a class="dropdown-item" href="#">Mens-Jeans</a></li>
-          <li><hr class="dropdown-divider"></li>
-          <li><a class="dropdown-item" href="#">Womens-Tshirts</a></li>
-          <li><a class="dropdown-item" href="#">Womens-Kurtas&Suits</a></li>
-          <li><a class="dropdown-item" href="#">Womens-Jeans</a></li>
-        </ul>
-      </li>
-      <li class="nav-item dropdown" style="margin-left: 50px;">
-        <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shoes</a>
-        <ul class="dropdown-menu">
-          <li><a class="dropdown-item" href="#">Boots</a></li>
-          <li><a class="dropdown-item" href="#">Sneakers</a></li>
-          <li><a class="dropdown-item" href="#">Sandals</a></li>
-        </ul>
-      </li>
-    
-      <li class="nav-item " style="margin-left: 50px;">
-        <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Men's Collection</a>
-       
-      </li>
-      <li class="nav-item " style="margin-left: 50px;">
-        <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Women's Collection</a>
-       
-      </li>
-    
-       <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
-        <i id="cart" style="color: orange;left: 0px;" class="fas fa-shopping-cart fa-3x "></i>     
-      </li>
-       <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
-        <i class="fas fa-user-circle fa-3x"  style="color: orange;left: 0px;"></i>     
-      </li>
+        <a href="./index.html">       <img src="./Images/sr (1).png"  alt="" style="height: 70px;width: 70px;" ></a>    
+        <li class="nav-item dropdown" style="margin-left: 50px;">
+            <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Electronics</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./television.html">Television</a></li>
+                <li><a class="dropdown-item" href="./Phone.html">Mobile Phones</a></li>
+                <li><a class="dropdown-item" href="#">Refrigerator</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Separated link</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown" style="margin-left: 50px;">
+            <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Clothes</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="./tshirt.html">Mens-Tshirts</a></li>
+                <li><a class="dropdown-item" href="#">Mens-Shirts</a></li>
+                <li><a class="dropdown-item" href="#">Mens-Jeans</a></li>
+                <li><hr class="dropdown-divider"></li>
+                <li><a class="dropdown-item" href="#">Womens-Tshirts</a></li>
+                <li><a class="dropdown-item" href="#">Womens-Kurtas&Suits</a></li>
+                <li><a class="dropdown-item" href="#">Womens-Jeans</a></li>
+            </ul>
+        </li>
+        <li class="nav-item dropdown" style="margin-left: 50px;">
+            <a class="nav-link dropdown-toggle" style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Shoes</a>
+            <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Boots</a></li>
+                <li><a class="dropdown-item" href="#">Sneake</a></li>
+                <li><a class="dropdown-item" href="#">Sandals</a></li>
+            </ul>
+        </li>
+        
+        <li class="nav-item " style="margin-left: 50px;">
+            <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Men's Collection</a>
+            
+        </li>
+        <li class="nav-item " style="margin-left: 50px;">
+            <a class="nav-link " style="color: white;font-size: large;font-family: 'Times New Roman', Times, serif;margin: 10px;padding: 10px;" data-bs-toggle="dropdown" href="#" role="button" aria-expanded="false">Women's Collection</a>
+            
+        </li>
+        
+        <div>
+            <a href="./cart.html"><li  class="nav-item " style="margin-left: 50px; margin-top: 10px;" >
+              <i id="cart" style="color: orange;left: 0px;" class="fas fa-shopping-cart fa-3x "></i> 
+              <span class="badge bg-secondary" id="notification"></span>    
+            </li>
+        </a>
+          </div>
+        <li  class="nav-item " style="margin-left: 100px; margin-top: 10px;" >
+            <i class="fas fa-user-circle fa-3x"  style="color: orange;left: 0px;"></i>     
+        </li>
     </ul>
     <div class="container">
         <div class=row row-cols-3  style="margin-top: 90px;">
@@ -99,7 +103,8 @@
                     <img src="./Images/jeans/m1.jpg"  class="mjeans"  style="height: 400px;width: 350px;margin-left: 40px;border-radius: 10%; border: 2px #00000071 solid ; ">
                     <div class="card-body">
                         <h5 class="card-title">Levi's Men's Skinny Fit Jeans</h5>
-                        <h6 class="card-text">Rs 1500</h6>
+                        <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">1500</h6>
                         <p class="card-text"> Care Instructions: Machine Wash
                             Fit Type: Skinny
                             Stretchable Jeans
@@ -118,7 +123,8 @@
                         <img src="./Images/jeans/m2.jpg" class="mjeans" style="height: 400px;width: 400px;margin-left: 40px;border-radius: 10%; border: 2px #00000071 solid ; " >
                         <div class="card-body">
                             <h5 class="card-title">Levi's Men's Slim Fit Jeans</h5>
-                            <h6 class="card-text">Rs 2700</h6>
+                            <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">2700</h6>
                             <p class="card-text">Care Instructions: Machine Wash
                                 Fit Type: Slim
                                 Color: Black
@@ -142,7 +148,8 @@
                             <img src="./Images/jeans/m3.jpg" class="mjeans" style="height: 400px;width: 200px;margin-left: 40px;border-radius: 10%; border: 2px #00000071 solid ; ">
                             <div class="card-body">
                                 <h5 class="card-title">Levi's Men's Slim Fit Jeans </h5>
-                                <h6 class="card-text">Rs 2300</h6>
+                                <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">2300</h6>
                                 <p class="card-text">Color: Blue
                                     Care Instructions: Machine Wash
                                     Fit Type: Slim
@@ -162,7 +169,8 @@
                             <div class="card-body">
                                 <h5 class="card-title">
                                     Levi's Men's Slim Regular Fit Jeans</h5>
-                                    <h6 class="card-text">Rs 3660</h6>
+                                    <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">3660</h6>
                                     <p class="card-text">Care Instructions: Machine Wash
                                         Fit Type: Regular Fit
                                         Color Name: blue</p>
@@ -179,7 +187,8 @@
                                 <img src="./Images/jeans/m6.jpg" class="mjeans" style="height: 400px;width: 200px;margin-left: 40px;border-radius: 10%; border: 2px #00000071 solid ; ">
                                 <div class="card-body">
                                     <h5 class="card-title">Levi's Men's Skinny Fit Jeans</h5>
-                                    <h6 class="card-text">Rs 1765</h6>
+                                    <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                                     <h6 style="display: inline-block;"class="card-text">1765</h6>
                                     <p class="card-text"> Color: Blue
                                         Care Instructions: Machine Wash
                                         Fit Type: Skinny
@@ -203,7 +212,8 @@
                                 <img src="./Images/jeans/m7.jpg" class="mjeans" style="height: 400px;width: 200px;margin-left: 40px;border-radius: 10%; border: 2px #00000071 solid ; ">
                                 <div class="card-body">
                                     <h5 class="card-title">Levi's Men's Skinny Fit Jeans</h5>
-                                    <h6 class="card-text">Rs 1900</h6>
+                                    <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">1900</h6>
                                     <p class="card-text">Color: Blue
                                         Care Instructions: Machine Wash
                                         Fit Type: Skinny
@@ -222,7 +232,8 @@
                                     <div class="card-body">
                                         <h5 class="card-title">
                                             Spykar Men's Slim Fit Jeans</h5>
-                                            <h6 class="card-text">Rs 2200</h6>
+                                            <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">2200</h6>
                                             <p class="card-text">Color: MID_BLUE
                                                 Care Instructions: Machine Wash
                                                 Fit Type: Slim
@@ -240,7 +251,8 @@
                                         <img src="./Images/jeans/m8.jpg" class="mjeans" style="height: 400px;width: 200px;margin-left: 40px;border-radius: 10%; border: 2px #00000071 solid ; ">
                                         <div class="card-body">
                                             <h5 class="card-title">Spykar Men's Skinny Fit Regular Jeans</h5>
-                                            <h6 class="card-text">Rs 1800</h6>
+                                            <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">1800</h6>
                                             <p class="card-text">Care Instructions: Machine Wash
                                                 Fit Type: Regular
                                                 Color Name: Dk.Grey
@@ -265,7 +277,8 @@
                                         <img src="./Images/jeans/m9.jpg" class="mjeans" style="height: 400px;width: 280px;margin-left: 10px;border-radius: 10%; border: 2px #00000071 solid ; margin-top: 10px;">
                                         <div class="card-body">
                                             <h5 class="card-title">Spykar Men's Skinny Fit Jeans</h5>
-                                            <h6 class="card-text">Rs 2700</h6>
+                                            <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">2700</h6>
                                             <p class="card-text">Care Instructions: Machine Wash
                                                 Fit Type: Skinny
                                                 Color name: Black
@@ -287,7 +300,8 @@
                                         <img src="./Images/jeans/m10.jpg" class="mjeans" style="height: 400px;width: 300px;margin-left: 0px;border-radius: 10%; border: 2px #00000071 solid ; ">
                                         <div class="card-body">
                                             <h5 class="card-title">Spykar Men's Skinny Fit Jeans</h5>
-                                            <h6 class="card-text">Rs 2400</h6>
+                                            <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">2400</h6>
                                             <p class="card-text">Care Instructions: Machine Wash
                                                 Fit Type: Slim
                                                 Slim Fit
@@ -306,7 +320,8 @@
                                         <img src="./Images/jeans/m12.jpg" class="mjeans" style="height: 400px;width: 280px;margin-left: 10px;margin-top: 10px;border-radius: 10%; border: 2px #00000071 solid ; ">
                                         <div class="card-body">
                                             <h5 class="card-title"> Spykar Men's Skinny Fit Jeans</h5>
-                                            <h6 class="card-text">Rs 2100</h6>
+                                            <span style="font-size: 20px;font-weight: bold;" >Rs. </span>
+                        <h6 style="display: inline-block;"class="card-text">2100</h6>
                                             <p class="card-text">Care Instructions: Machine Wash
                                                 Fit Type: Slim
                                                 Stretchable Jeans
